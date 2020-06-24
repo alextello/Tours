@@ -18,48 +18,6 @@ body {
   color: #777;
   padding: 3rem; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-bottom: 6rem; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  /* Solucionar pequeño shacking en animacion */ }
-  .heading-primary-main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .heading-primary-sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.7rem;
-    animation: moveInRight 1s ease-out;
-    margin-bottom: 3rem; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -81,6 +39,35 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /* Solucionar pequeño shacking en animacion */ }
+  .heading-primary-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.7rem;
+    animation: moveInRight 1s ease-out;
+    margin-bottom: 3rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -125,10 +112,23 @@ body {
   animation-fill-mode: backwards;
   /* Esta propiedad remueve los estilos iniciales y los aplica en conjuto con la animación */ }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 6rem; }
