@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,7 +43,9 @@
 					<span class="heading-primary-main">Afuera</span>
 					<span class="heading-primary-sub">Es donde la vida sucede</span>
 				</h1>
-				<a href="#" class="btn btn-white btn-animated">Descubre nuestros tours</a>
+				<a href="#section-tours" class="btn btn-white btn-animated"
+					>Descubre nuestros tours</a
+				>
 			</div>
 		</header>
 		<main>
@@ -147,7 +149,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-tours">
+			<section class="section-tours" id="section-tours">
 				<div class="u-center-text u-margin-bottom-big">
 					<h2 class="heading-secondary">
 						Tours más populares
@@ -181,7 +183,7 @@
 										<p class="card__price-only">A solo</p>
 										<p class="card__price-value">$299</p>
 									</div>
-									<a href="#" class="btn btn-white">Reserva ya</a>
+									<a href="#popup" class="btn btn-white">Reserva ya</a>
 								</div>
 							</div>
 						</div>
@@ -213,7 +215,7 @@
 										<p class="card__price-only">A solo</p>
 										<p class="card__price-value">$490</p>
 									</div>
-									<a href="#" class="btn btn-white">Reserva ya</a>
+									<a href="#popup" class="btn btn-white">Reserva ya</a>
 								</div>
 							</div>
 						</div>
@@ -245,7 +247,7 @@
 										<p class="card__price-only">A solo</p>
 										<p class="card__price-value">$897</p>
 									</div>
-									<a href="#" class="btn btn-white">Reserva ya</a>
+									<a href="#opup" class="btn btn-white">Reserva ya</a>
 								</div>
 							</div>
 						</div>
@@ -419,5 +421,42 @@
 				</div>
 			</div>
 		</footer>
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__left">
+					<img src="img/nat-8.jpg" alt="Tour" class="popup__img" />
+					<img src="img/nat-9.jpg" alt="Tour" class="popup__img" />
+				</div>
+				<div class="popup__right">
+					<a href="#section-tours" class="popup__close" id="section-tours">&times;</a>
+					<h2 class="heading-secondary u-margin-bottom-medium">
+						Empieza a reservar ahora
+					</h2>
+					<h3 class="heading-tertiary u-margin-bottom-medium">
+						Importante &ndash; por favor lee los términos y condiciones antes de
+						reservar
+					</h3>
+					<p class="popup__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, inventore
+						illum labore optio impedit voluptatibus. Ducimus nam quam modi consequuntur
+						numquam facilis cumque nemo magni amet laboriosam. Ea, soluta aperiam.
+						Consequatur, illum adipisci. Doloremque, animi saepe nam recusandae cum
+						autem totam quos asperiores ut iure eius quam earum hic nemo. Officia
+						explicabo, cupiditate qui repudiandae ipsum neque exercitationem?
+						Voluptatem, aliquid? Iste tenetur, qui alias omnis, eveniet ipsam, fuga ea
+						atque mollitia sit adipisci? Ipsa soluta officiis ducimus beatae neque
+						itaque eum odio, voluptates labore reprehenderit voluptas illo animi vel
+						dolor. Blanditiis consectetur ex consequuntur distinctio architecto qui
+						autem officiis incidunt, et, quisquam sapiente. Iure expedita similique
+						atque! Sapiente, sunt sint laborum harum excepturi quo dignissimos
+						repellendus. Modi atque ab animi? Atque reprehenderit accusantium nesciunt
+						explicabo distinctio porro cumque? Magnam minima corrupti debitis esse eum
+						temporibus, ad repellendus illo dolorum tempore nisi officiis asperiores
+						veritatis illum doloribus harum fugiat cupiditate et?
+					</p>
+					<a href="#" class="btn btn-green">Reserva ahora</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
